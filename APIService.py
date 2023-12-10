@@ -8,15 +8,9 @@ app = Flask(__name__)
 
 @app.route('/info', methods=['GET'])
 def info():
-    #sample URL
-    # http://127.0.0.1:5000/info?email=vedt2@outlook.com&date1=2024-01-01&date2=2024-06-30
-
     email = request.args.get('email', default = '*', type = str)
     date1 = request.args.get('date1', default = '*', type = str)
     date2 = request.args.get('date2', default = '*', type = str)
-
-    print(email, date1, date2)
-
 
     #pass arguments into Database Service
     transactions = DBService.getTransactions(date1, date2)

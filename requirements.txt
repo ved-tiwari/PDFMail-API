@@ -1,0 +1,9 @@
+flask
+DBService
+PDFService
+EmailService
+pandas
+numpy
+smtplib
+email
+pdfkit
