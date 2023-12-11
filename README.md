@@ -36,3 +36,10 @@ def sendEmailTo(email):
    sender_email = "yourEmail@domain.com"
    rec_email = email
    password = pw
+```
+
+
+## Adding Autorizaiton
+- Implement a token-based authentication system.
+- Use a middleware in the API service to verify the token before processing requests.
+- Provide users with unique API keys or tokens upon registration.
